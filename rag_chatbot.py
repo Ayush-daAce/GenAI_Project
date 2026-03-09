@@ -4,7 +4,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_groq import ChatGroq
 
 # --- 1. SET UP GROQ API KEY ---
-os.environ["GROQ_API_KEY"] = "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"
+os.environ["GROQ_API_KEY"] = "gsk_YOUR GROQ API KEY HERE"
 
 # --- 2. LOAD THE VECTOR DATABASE ---
 print("Waking up the AI Audit Assistant...")
@@ -60,4 +60,5 @@ while True:
     # Step D: Send the final prompt to the LLM
     response = llm.invoke(prompt)
     
+
     print(f"\nAnswer: {response.content}")
