@@ -3,7 +3,7 @@ from azure.core.exceptions import ResourceExistsError
 import os
 
 # Paste your connection string here
-AZURE_CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=ayushgenai;AccountKey=pBgwLfRbp1SVxd/tHM65HMDcYCkT54SEuhLmirR5m6IcIQ/gAdSNJ0YpbNNV/q16G38V+FuxyS/x+AStj2wV7Q==;EndpointSuffix=core.windows.net"
+AZURE_CONNECTION_STRING = "DefaultEndpointsProtocol=YOUR AZURE CONNECTION ACCESS KEY HERE"
 CONTAINER_NAME = "audit-log-raw"
 FILE_NAME = "business_audit_logs.csv"
 
@@ -33,4 +33,5 @@ def upload_to_blob():
         print(f"An error occurred: {e}")
 
 if __name__ == "__main__":
+
     upload_to_blob()
