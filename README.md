@@ -38,7 +38,8 @@ This project simulates a modern enterprise data workflow, moving from raw cloud 
    python data_prep.py
 
 6.Build the local FAISS vector index:
-   ```bashpython build_vector_db.py
+   ```bash
+   python build_vector_db.py
     
 7. Launch the AI Audit Assistant interactive chat:
     ```bash
