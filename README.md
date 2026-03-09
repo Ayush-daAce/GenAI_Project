@@ -29,7 +29,10 @@ This project simulates a modern enterprise data workflow, moving from raw cloud 
 4. Generate the dataset and upload to Azure (requires an Azure Storage connection string):
     ```bash
     python upload_to_azure.py
-6. Process the data and build the local FAISS vector index:
+6. Process the data
+   ```bash
+   python data_prep.py
+   and build the local FAISS vector index:
     ```bash
     python build_vector_db.py
 8. Launch the AI Audit Assistant interactive chat:
